@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"
+    />
+    <title>오늘챙김 - 자동 일정 알림 개인정보 처리방침</title>
+    <style>
+      :root {
+        color: #172120;
+        background: #f6f8f7;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      body { margin: 0; line-height: 1.7; }
+      main { max-width: 780px; margin: 0 auto; padding: 52px 24px 72px; }
+      header { border-bottom: 1px solid #d8dfdc; padding-bottom: 26px; }
+      h1 { margin: 0; font-size: 30px; line-height: 1.28; }
+      h2 { margin: 36px 0 10px; font-size: 20px; line-height: 1.4; }
+      p, li { font-size: 16px; }
+      ul { padding-left: 22px; }
+      .meta { color: #52605c; margin: 10px 0 0; }
+      .notice { margin-top: 24px; padding: 16px 18px; border-left: 4px solid #187a70; background: #e8f3ef; }
+      footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid #d8dfdc; color: #52605c; }
+      a { color: #0f635b; }
+      @media (max-width: 480px) { main { padding: 34px 20px 52px; } h1 { font-size: 26px; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>오늘챙김 - 자동 일정 알림 개인정보 처리방침</h1>
+        <p class="meta">시행일: 2026년 7월 22일</p>
+      </header>
+
+      <p class="notice">오늘챙김은 사용자가 명시적으로 동의하고 직접 ON으로 선택한 앱의 알림에서 일정 후보를 찾습니다. 알림 원문 전체는 저장하지 않으며, 외부 서버로 전송하지 않습니다.</p>
+
+      <section>
+        <h2>1. 수집하는 정보</h2>
+        <p>사용자가 앱 내부에서 명시적으로 동의하고 Android 알림 접근 권한을 허용한 경우에만 다음 정보를 단말기 안에서 처리합니다.</p>
+        <ul>
+          <li>알림을 보낸 앱의 패키지명과 앱 이름</li>
+          <li>일반 알림의 마스킹된 제목과 마스킹된 본문 일부, 본문 해시, 도착 시각</li>
+          <li>일정 후보로 추정한 제목, 날짜, 시간, 카테고리, 장소, 신뢰도, 상태</li>
+          <li>알림 내용이 없는 리스너 연결·처리·전달 경로 진단 정보</li>
+        </ul>
+        <p>신규 설치에서는 수집 대상 앱이 모두 OFF입니다. 사용자가 특정 앱을 직접 ON으로 선택한 뒤에만 해당 앱의 알림을 처리합니다.</p>
+      </section>
+
+      <section>
+        <h2>2. 수집하지 않는 정보</h2>
+        <ul>
+          <li>SMS 데이터베이스 또는 문자 원문 직접 읽기, 통화 기록, 연락처</li>
+          <li>카카오톡 내부 데이터베이스와 Gmail·네이버메일 등의 전체 메일함</li>
+          <li>단말기 기본 알람 앱 목록과 단말기 캘린더 일정</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. 이용 목적</h2>
+        <ul>
+          <li>알림 속 날짜, 시간, 해야 할 일을 찾아 일정 후보로 보여주기</li>
+          <li>인증·금융·보안 알림을 감지해 일정 후보 분석 전에 제외하기</li>
+          <li>사용자가 추가, 수정, 무시한 후보 상태를 앱 안에 저장하기</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. 민감정보 처리</h2>
+        <p>인증번호, OTP, 보안코드, 비밀번호, 금융, 계좌, 카드승인, 신분증 관련 표현이 포함된 알림은 분석 대상에서 제외합니다. 이 알림의 제목과 본문은 저장하지 않으며, 출처 앱, 도착 시각, 제외 상태와 내용에서 만들지 않은 중복 방지용 해시만 단말기에 남깁니다.</p>
+      </section>
+
+      <section>
+        <h2>5. 보관과 삭제</h2>
+        <p>알림 제목과 본문 원문 전체는 저장하지 않습니다. 일반 알림의 마스킹된 데이터와 일정 후보는 단말기 안에만 저장되며 Android 클라우드 백업과 기기 간 이전에서 제외됩니다. 사용자는 앱의 설정 &gt; 개인정보 센터에서 저장된 수집 내역과 일정 후보를 삭제할 수 있습니다.</p>
+      </section>
+
+      <section>
+        <h2>6. 제3자 제공과 외부 전송</h2>
+        <p>현재 버전은 수집한 알림 데이터와 일정 후보를 외부 서버, 광고 SDK, 분석 SDK, 제3자에게 전송하거나 판매하지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2>7. 사용자 동의와 권한</h2>
+        <p>알림 수집은 앱 내부의 명시적 동의와 Android 시스템의 알림 접근 권한이 모두 있는 경우에만 동작합니다. 앱 내부 동의를 철회하면 Android 권한이 켜져 있어도 새 알림을 저장하거나 분석하지 않습니다.</p>
+        <p>인증번호, 금융, 보안 관련 알림은 분석하지 않습니다. 수집 대상 앱은 언제든 직접 켜고 끌 수 있습니다.</p>
+      </section>
+
+      <section>
+        <h2>8. 사용하지 않는 권한 행동</h2>
+        <p>오늘챙김은 알림에 답장하거나 알림을 삭제하거나 스누즈하지 않으며, 방해 금지 모드나 휴대폰 설정을 변경하지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2>9. 아동 대상 여부</h2>
+        <p>현재 버전은 아동을 주 대상 사용자로 설계하지 않았습니다.</p>
+      </section>
+
+      <section>
+        <h2>10. 문의 및 운영자</h2>
+        <p>개인정보 관련 문의는 아래 연락처로 보내 주세요.</p>
+        <ul>
+          <li>개발자명: 오늘챙김 운영팀</li>
+          <li>문의 이메일: <a href="mailto:jungssam81@gmail.com">jungssam81@gmail.com</a></li>
+        </ul>
+      </section>
+
+      <footer>본 정책은 오늘챙김 - 자동 일정 알림의 현재 1차 출시 범위에 적용됩니다.</footer>
+    </main>
+  </body>
+</html>
