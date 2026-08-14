@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index,follow" />
     <meta name="referrer" content="no-referrer" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"
-    />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'" />
     <title>TodayCare Privacy Policy</title>
     <style>
-      :root {
-        color: #172120;
-        background: #f6f8f7;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      }
+      :root { color: #172120; background: #f6f8f7; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
       body { margin: 0; line-height: 1.7; }
       main { max-width: 780px; margin: 0 auto; padding: 52px 24px 72px; }
       header { border-bottom: 1px solid #d8dfdc; padding-bottom: 26px; }
@@ -33,79 +26,71 @@
   <body>
     <main>
       <header>
-        <h1>TodayCare Privacy Policy</h1>
-        <p class="meta">Effective date: July 22, 2026</p>
+        <h1>TodayCare: Schedule Alerts Privacy Policy</h1>
+        <p class="meta">Effective date: August 14, 2026</p>
       </header>
 
-      <p class="notice">TodayCare finds schedule candidates only from notifications for apps that you explicitly consent to and turn on. It does not store full notification text or send notification-derived data to an external server.</p>
+      <p class="notice">TodayCare finds schedule candidates only from Android notifications after you consent in the app and turn on a source yourself. Complete notification text is never sent to backup, ads, billing, or sharing features.</p>
 
       <section>
         <h2>1. Information processed on your device</h2>
-        <p>Only after you give in-app consent and allow Android notification access, TodayCare processes the following information locally on your device:</p>
+        <p>After in-app consent and Android notification access are both enabled, TodayCare processes the following on your device to create schedule candidates:</p>
         <ul>
-          <li>The package name and displayed name of the app that sent a notification</li>
-          <li>A masked notification title, a masked excerpt, a body hash, and arrival time for ordinary notifications</li>
-          <li>Schedule candidate details such as title, date, time, category, location, confidence, and status</li>
-          <li>Text-free listener connection and processing diagnostics</li>
+          <li>The package name and display name of the app that sent a notification</li>
+          <li>For schedule candidates only, a masked title and preview, a body hash, and arrival time</li>
+          <li>A content-free exclusion status and deduplication data for sensitive alerts or an exclusion rule you set</li>
+          <li>Suggested title, date, time, category, location, confidence, and review status</li>
         </ul>
-        <p>All collection sources are off on a new installation. TodayCare processes notifications from an app only after you turn that app on.</p>
+        <p>Every source starts OFF on a new install. Only notifications arriving after you turn a source ON are processed.</p>
       </section>
 
       <section>
-        <h2>2. Information TodayCare does not directly read</h2>
+        <h2>2. Sensitive alerts and access we do not use</h2>
+        <p>Notifications about verification codes, OTPs, security codes, passwords, financial accounts, card approvals, or identity documents are excluded before analysis. Their title and body are not stored.</p>
+        <p>TodayCare does not directly read the SMS database, call history, contacts, KakaoTalk internal databases, entire Gmail or Naver Mail inboxes, or existing device alarms.</p>
+      </section>
+
+      <section>
+        <h2>3. Account and optional backup</h2>
+        <p>Only if you choose email-link sign-in in Settings, we use Supabase to provide an account. Only approved schedule titles, categories, dates/times, locations, and approval or change times that you explicitly back up are stored in a user-isolated service for restore on another device.</p>
+        <p>Notification text, masked previews, body hashes, exclusion records, source apps, analysis reasons, and your exclusion keywords are not sent through account or backup services.</p>
+      </section>
+
+      <section>
+        <h2>4. Advertising and privacy choices</h2>
+        <p>Free users may see a Google Mobile Ads banner in Today or Calendar after adding at least one schedule. We do not place ads in candidate review, permission, privacy, or source-selection screens.</p>
+        <p>For ad delivery, frequency control, analytics, and fraud prevention, the Google Mobile Ads SDK may automatically collect or share approximate location inferred from IP address, app interactions, diagnostics, and device or advertising identifiers with Google. Ad requests start only after the Google User Messaging Platform (UMP) consent flow, and you can revisit ad privacy options in the TodayCare support screen when required.</p>
+        <p>We do not pass notification content, schedule candidates, approved-schedule backups, or email addresses to ad requests.</p>
+      </section>
+
+      <section>
+        <h2>5. Purchases and ad removal</h2>
+        <p>When you buy or restore ad removal in Google Play, we use a Google Play purchase proof, product ID, and an unreadable account reference to verify the purchase on a server. Raw purchase tokens are not stored in the app or backup database.</p>
+        <p>Ad-free access is granted only after server verification. Account deletion removes the account, login information, backup, and account entitlement summary. If an active one-time purchase exists, only a SHA-256 purchase-token hash detached from your user ID, product ID, active or refund state, and processing times are retained to prevent duplicate grants and support restoration to a new account. Choosing Restore purchases from a new account asks Google Play to verify and reconnect the same purchase.</p>
+        <p>A confirmed refund or purchase revocation removes ad-free access and updates the retained status.</p>
+      </section>
+
+      <section>
+        <h2>6. Sharing and ratings</h2>
+        <p>Choosing Share or Rate in Settings opens the Android share sheet or Google Play. Shared text never includes personal schedules or notification content. A platform rating request may be attempted after you have added schedules; it uses only a local count and last-request time, not notification content.</p>
+      </section>
+
+      <section>
+        <h2>7. Retention and deletion</h2>
+        <p>General notifications and notifications that do not become final candidates are not retained. Notification-derived local data is excluded from Android cloud backup and device transfer. You can delete collection history and candidates in Settings &gt; Privacy Center.</p>
+        <p>You can delete cloud backup in Settings &gt; Account and backup. Account deletion removes the account and server backup; local collection data stays on the device until you remove it separately in Privacy Center.</p>
+      </section>
+
+      <section>
+        <h2>8. Contact</h2>
+        <p>Send privacy questions to:</p>
         <ul>
-          <li>SMS databases or SMS message contents, call logs, or contacts</li>
-          <li>Internal KakaoTalk databases or complete Gmail and Naver Mail inboxes</li>
-          <li>Existing alarms or device calendar events</li>
+          <li>Developer: 오늘챙김 운영팀</li>
+          <li>Contact email: <a href="mailto:jungssam81@gmail.com">jungssam81@gmail.com</a></li>
         </ul>
       </section>
 
-      <section>
-        <h2>3. Purpose of processing</h2>
-        <ul>
-          <li>To find dates, times, and tasks in notifications and present them as reviewable schedule candidates</li>
-          <li>To exclude authentication, financial, and security alerts before schedule analysis</li>
-          <li>To retain candidate actions that you add, edit, or ignore inside the app</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>4. Sensitive alerts</h2>
-        <p>Alerts containing verification codes, OTPs, security codes, passwords, financial account information, card approvals, or identity-document terms are excluded before schedule analysis. TodayCare does not retain the title or body of these alerts. It keeps only the source app, arrival time, exclusion status, and a non-reversible hash for duplicate prevention on the device.</p>
-      </section>
-
-      <section>
-        <h2>5. Retention and deletion</h2>
-        <p>TodayCare does not store full notification titles or bodies. Masked records and schedule candidates stay on your device only and are excluded from Android cloud backup and device-to-device transfer. You can delete collected history and schedule candidates at any time in Settings &gt; Privacy Center. Because this release has no account or cloud sync, local records do not move to a new phone.</p>
-      </section>
-
-      <section>
-        <h2>6. Sharing, advertising, and external transfers</h2>
-        <p>This version does not send or sell notification-derived data or schedule candidates to external servers, advertising SDKs, analytics SDKs, or third parties. It does not include advertising.</p>
-      </section>
-
-      <section>
-        <h2>7. Consent and controls</h2>
-        <p>Notification collection works only when both in-app consent and Android notification access are enabled. If you withdraw in-app consent, TodayCare does not store or analyze new notifications even if Android access remains enabled. You can turn each collection source on or off at any time.</p>
-        <p>TodayCare does not reply to, dismiss, or snooze notifications and does not change Do Not Disturb mode or device settings.</p>
-      </section>
-
-      <section>
-        <h2>8. Children</h2>
-        <p>This release is not designed for children and is intended for adults.</p>
-      </section>
-
-      <section>
-        <h2>9. Contact</h2>
-        <p>For privacy questions, contact TodayCare Operations at <a href="mailto:jungssam81@gmail.com">jungssam81@gmail.com</a>.</p>
-      </section>
-
-      <section>
-        <h2>10. Changes to this policy</h2>
-        <p>We will update this page before a material change to how the app handles user data takes effect.</p>
-      </section>
-
-      <footer>This policy applies to the first-release scope of TodayCare - Smart Schedule Alerts.</footer>
+      <footer>This policy applies to the commercial update scope of TodayCare: Schedule Alerts.</footer>
     </main>
   </body>
 </html>
